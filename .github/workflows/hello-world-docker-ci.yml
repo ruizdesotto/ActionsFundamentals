@@ -17,8 +17,8 @@ jobs:
       - name: Run container
         id: hello-action
         uses: ./hello-world-docker-action
-        with: 
-          who-to-gree: 'test-name'
+        env: 
+          INPUT_WHO_TO_GREET: 'test-name'
       
       - name: Output the time
         run: |
