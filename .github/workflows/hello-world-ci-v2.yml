@@ -1,0 +1,11 @@
+name: Hellow World v2
+on: [workflow_dispatch]
+
+jobs:
+  ci-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World Action
+        uses: ruizdesotto/ActionsFundamentals/hello-world-docker-action@v1
+        with:
+          who-to-greet: 'test-name-v2'
