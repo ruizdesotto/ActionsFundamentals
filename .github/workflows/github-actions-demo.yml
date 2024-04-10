@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: '15 6 * * 0' # Every Sunday at 6:15 UTC
   workflow_dispatch: # Manual trigger
+    inputs:
+      environment:
+        type: environment
+        required: true
     
 jobs:
   demo-job:
